@@ -22,6 +22,7 @@ qemu-system-riscv64 ^
   -device virtio-blk-device,drive=cdrom ^
   -device virtio-gpu-pci ^
   -display sdl,gl=on ^
+  -serial stdio ^
   -netdev user,id=net0,hostfwd=tcp::2222-:22 ^
   -device virtio-net-device,netdev=net0
 
